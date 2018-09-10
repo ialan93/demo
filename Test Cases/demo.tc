@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>demo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0723637a-f97b-449f-bfd7-3fd80b278c29</testCaseGuid>
+   <variable>
+      <defaultValue>'&quot;C:\\\\Users\\\\Alan Chan\\\\Desktop\\\\newnumber.xlsx&quot;'</defaultValue>
+      <description></description>
+      <id>dcd27498-d47b-430d-927a-434316e9c7db</id>
+      <masked>false</masked>
+      <name>input_Path</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>adf534ed-d3db-4517-8f22-a69c6f79450e</id>
+      <masked>false</masked>
+      <name>input_email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2d9405a9-ba46-4998-8c03-87d533ec31fa</id>
+      <masked>true</masked>
+      <name>input_password</name>
+   </variable>
+</TestCaseEntity>
