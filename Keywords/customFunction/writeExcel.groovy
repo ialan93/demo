@@ -26,8 +26,8 @@ import internal.GlobalVariable
 
 public class writeExcel {
 	@Keyword
-	def void writeToExcel(String minput_Path, int iRow, int iCell, String iText ){
-		FileInputStream file = new FileInputStream (new File(minput_Path))
+	def void writeToExcel(String input_Path, int iRow, int iCell, String iText ){
+		FileInputStream file = new FileInputStream (new File(input_Path))
 		XSSFWorkbook workbook = new XSSFWorkbook(file)
 		XSSFSheet sheet = workbook.getSheet("Sheet1")
 		//XSSFSheet sheet = workbook.getSheet(0)
@@ -46,7 +46,7 @@ public class writeExcel {
 			oCell = oRow.getCell(iCell - 1)
 		}
 		oCell.setCellValue(iText)
-		FileOutputStream outFile =new FileOutputStream(new File(minput_Path))
+		FileOutputStream outFile =new FileOutputStream(new File(input_Path))
 		workbook.write(outFile)
 		outFile.close()
 	}

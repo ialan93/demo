@@ -6,11 +6,18 @@
    <comment></comment>
    <testCaseGuid>0723637a-f97b-449f-bfd7-3fd80b278c29</testCaseGuid>
    <variable>
-      <defaultValue>'&quot;C:\\\\Users\\\\Alan Chan\\\\Desktop\\\\newnumber.xlsx&quot;'</defaultValue>
+      <defaultValue>'C:\\\\Users\\\\Alan Chan\\\\Desktop\\\\newnumber.xlsx'</defaultValue>
       <description></description>
       <id>dcd27498-d47b-430d-927a-434316e9c7db</id>
       <masked>false</masked>
       <name>input_Path</name>
+   </variable>
+   <variable>
+      <defaultValue>'/Users/alanchan/Desktop/newnumber.xlsx'</defaultValue>
+      <description></description>
+      <id>d5a5efb1-551a-4ecd-8e08-6db5fb56fe35</id>
+      <masked>false</masked>
+      <name>minput_Path</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
@@ -25,12 +32,5 @@
       <id>2d9405a9-ba46-4998-8c03-87d533ec31fa</id>
       <masked>true</masked>
       <name>input_password</name>
-   </variable>
-   <variable>
-      <defaultValue>'/Users/alanchan/Desktop/newnumber.xlsx'</defaultValue>
-      <description></description>
-      <id>d5a5efb1-551a-4ecd-8e08-6db5fb56fe35</id>
-      <masked>false</masked>
-      <name>minput_Path</name>
    </variable>
 </TestCaseEntity>
