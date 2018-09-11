@@ -26,4 +26,11 @@
       <masked>true</masked>
       <name>input_password</name>
    </variable>
+   <variable>
+      <defaultValue>'/Users/alanchan/Desktop/newnumber.xlsx'</defaultValue>
+      <description></description>
+      <id>d5a5efb1-551a-4ecd-8e08-6db5fb56fe35</id>
+      <masked>false</masked>
+      <name>minput_Path</name>
+   </variable>
 </TestCaseEntity>

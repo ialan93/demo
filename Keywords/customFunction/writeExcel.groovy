@@ -26,12 +26,12 @@ import internal.GlobalVariable
 
 public class writeExcel {
 	@Keyword
-	def void writeToExcel(int iRow, int iCell, String iText ){
-		FileInputStream file = new FileInputStream (new File("C:\\Users\\Alan Chan\\Desktop\\newnumber.xlsx"))
+	def void writeToExcel(String minput_Path, int iRow, int iCell, String iText ){
+		FileInputStream file = new FileInputStream (new File(minput_Path))
 		XSSFWorkbook workbook = new XSSFWorkbook(file)
 		XSSFSheet sheet = workbook.getSheet("Sheet1")
 		//XSSFSheet sheet = workbook.getSheet(0)
-		
+
 		//Write data to excel'
 		Row oRow
 		oRow = sheet.getRow(iRow)
@@ -39,14 +39,14 @@ public class writeExcel {
 			sheet.createRow(iRow)
 			oRow = sheet.getRow(iRow)
 		}
-		Cell oCell;
+		Cell oCell
 		oCell = oRow.getCell(iCell - 1)
 		if(oCell == null ){
 			oRow.createCell(iCell - 1)
 			oCell = oRow.getCell(iCell - 1)
 		}
 		oCell.setCellValue(iText)
-		FileOutputStream outFile =new FileOutputStream(new File("C:\\Users\\Alan Chan\\Desktop\\newnumber.xlsx"))
+		FileOutputStream outFile =new FileOutputStream(new File(minput_Path))
 		workbook.write(outFile)
 		outFile.close()
 	}

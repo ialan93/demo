@@ -62,9 +62,11 @@ while (myLuckyCheck != true) {
 	while (getNumber.trim() == "") {
 		getNumber = WebUI.getText(findTestObject('label_number'))
 	}
+	//String[] getNumberList = getNumber.split("8768")
+	//getNumber = getNumberList[1]
 	println(getNumber)
 	
-	CustomKeywords.'customFunction.writeExcel.writeToExcel'(rowNum, 1, getNumber)
+	CustomKeywords.'customFunction.writeExcel.writeToExcel'(minput_Path, rowNum, 1, getNumber)
 	rowNum = ++rowNum
 	
 	//String[] arrayNumber = getNumber.split("")
@@ -79,10 +81,12 @@ while (myLuckyCheck != true) {
 			charCountMap.put(c, 1)
 		}
 		for (Character duplicateNumber : charCountMap.keySet()) {
-			if (charCountMap.get(duplicateNumber) > 3){
+			if (charCountMap.get(duplicateNumber) >= 4){
 				println("duplicate character : " + duplicateNumber + " ====== " + " count : " + charCountMap.get(duplicateNumber))
-				myLuckyCheck = true
-				break Loop
+				//if (duplicateNumber == "8" || duplicateNumber == "6") {
+					myLuckyCheck = true
+					break Loop
+				//}
 			}
 	   }
 	}
@@ -92,6 +96,7 @@ while (myLuckyCheck != true) {
 			WebUI.click(findTestObject('button_logout'))
 		}else{
 			openBrowser = false
+			WebUI.closeBrowser()
 		}
 	}
 }
