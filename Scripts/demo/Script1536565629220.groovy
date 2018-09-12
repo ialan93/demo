@@ -66,7 +66,7 @@ while (myLuckyCheck != true) {
 	//getNumber = getNumberList[1]
 	println(getNumber)
 	
-	CustomKeywords.'customFunction.writeExcel.writeToExcel'(input_Path, rowNum, 1, getNumber)
+	CustomKeywords.'customFunction.writeExcel.writeToExcel'(minput_Path, rowNum, 1, getNumber)
 	rowNum = ++rowNum
 	
 	//String[] arrayNumber = getNumber.split("")

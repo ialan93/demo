@@ -20,14 +20,14 @@
       <name>minput_Path</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'alan_chan0072003@hotmail.com'</defaultValue>
       <description></description>
       <id>adf534ed-d3db-4517-8f22-a69c6f79450e</id>
       <masked>false</masked>
       <name>input_email</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'(desmun)007'</defaultValue>
       <description></description>
       <id>2d9405a9-ba46-4998-8c03-87d533ec31fa</id>
       <masked>true</masked>
