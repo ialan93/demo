@@ -21,11 +21,18 @@ import internal.GlobalVariable as GlobalVariable
 import java.util.HashMap
 import java.util.Set
 import customFunction.writeExcel as writeExcel
+import customFunction.getConfig as GetConfig
 
 def myLuckyCheck = false
 def loggedin = false
 def openBrowser = false
 int rowNum = 0
+String osName = CustomKeywords.'customFunction.getConfig.getOperatingSystem'()
+String[] splitOS = osName.split()
+osName = splitOS[0]
+if (osName.toLowerCase() == "mac") {
+	input_Path = minput_Path
+}
 
 Loop:
 while (myLuckyCheck != true) {
