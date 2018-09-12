@@ -70,7 +70,7 @@ while (myLuckyCheck != true) {
 		getNumber = WebUI.getText(findTestObject('label_number'))
 	}
 	//String[] getNumberList = getNumber.split("8768")
-	//getNumber = getNumberList[1]
+	//getNumber = getNumberList[1] 
 	println(getNumber)
 	
 	CustomKeywords.'customFunction.writeExcel.writeToExcel'(input_Path, rowNum, 1, getNumber)
